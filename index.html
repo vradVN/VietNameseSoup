@@ -3,103 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./asset/CSS/style.css" />
     <title>Vietnamese Soup</title>
   </head>
   <body>
-    <div id="header">
+    <header id="header">
       <h1>Soup</h1>
       <!--Tên của web-->
       <ul>
         <!--do nav bar có dạng danh sách. dùng ul element-->
-        <li><a href="">Home</a></li>
-        <li><a href="">Shop</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="products.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
-    </div>
-    <div id="intro">
+    </header>
+    <section id="intro">
       <!--đặt id phần giới thiệu là intro-->
       <h2>Welcome to My Shop</h2>
+      <div class="intro-banner">
+        <img src="" alt="" />
+      </div>
       <p>decription</p>
-    </div>
-    <div id="products">
+    </section>
+    <section id="products">
       <!--đặt id cho danh sách món ăn là products-->
       <div class="product">
         <!--đặt class cho product là product-->
-        <img src="./asset/imges/buncha.webp" alt="bún chả Hà Nội" />
-        <!--ảnh bún chả được dẫn từ link-->
-        <h3>Bún chả Hà Nội</h3>
-        <!--tiêu đề h3, bún chả hà nội-->
-        <p>Giá: 50,000 VNĐ</p>
-        <!--thẻ thêm đoạn văn p-->
-        <a href="">Link mua</a
-        ><!--gắn mỏ neo cho "link mua" để dẫn tới địa chỉ của href-->
+        <figure>
+          <a href="product-detail.html" target="_blank"
+            ><img src="./asset/imges/buncha.webp" alt="bún chả Hà Nội"
+          /></a>
+          <!--ảnh bún chả được dẫn từ link-->
+          <figcaption>
+            <h3>Bún chả Hà Nội</h3>
+            <!--tiêu đề h3, tên-->
+            <p>Giá: 50,000 VNĐ</p>
+            <!--thẻ thêm đoạn văn p-->
+            <p>Mô tả:</p>
+            <a href="">Xem chi tiết</a
+            ><!--gắn mỏ neo cho "link mua" để dẫn tới địa chỉ của href-->
+          </figcaption>
+        </figure>
       </div>
       <div class="product">
         <img src="./asset/imges/Pho.png" alt="Phở bò" />
         <h3>Phở Bò Hà Nội</h3>
         <p>Giá: 70,000 VNĐ</p>
-        <a href="">Link mua</a>
+        <p>Mô tả:</p>
+        <a href="">Xem chi tiết</a>
       </div>
       <div class="product">
-        <img
-          src="./asset/imges/bc_botxat.jpg"
-          alt="Bánh canh bột xắt"
-        />
+        <img src="./asset/imges/bc_botxat.jpg" alt="Bánh canh bột xắt" />
         <h3>Bún chả hà nội</h3>
         <p>Giá: 35,000 VNĐ</p>
-        <a href="">Link mua</a>
+        <p>Mô tả:</p>
+        <a href="">Xem chi tiết</a>
       </div>
-    </div>
-    <div id="contact">
+    </section>
+    <p>&lt; 1 2 3 4 5 &gt;</p>
+    <footer id="contact">
       <h2>Liên hệ</h2>
       <h3>Nhập tên: <input type="text" /></h3>
       <h3>Nhập email: <input type="text" /></h3>
       <button>Gửi</button>
-    </div>
+    </footer>
   </body>
 </html>
-<!--tại sao có lúc dùng id có lúc dùng class 
-    theo mình hiểu thì lúc dùng id thì id có tính độc nhất không trùng
-    các phần lớn sẽ không thay đổi sẽ được đặt id để tránh trùng
-    còn từng phần con sẽ có sự đa dạng về định dạng, quy định
-    class nó dùng cho nhiều phần tử con
-
-
-    trả lời cho câu hỏi này :
-    em đã hiểu đúng nhưng để làm rõ hơn thì cô có vd như sau để e dễ hình dung và vận dụng nhé
-    id
-      Dùng để định danh duy nhất cho một phần tử trên trang.
-      Một giá trị id chỉ nên xuất hiện 1 lần trong một file HTML.
-      Thường dùng khi:
-      Tạo điểm neo để điều hướng (href="#about").
-      JavaScript cần lấy chính xác một phần tử.
-      Các section lớn như header, main, footer, contact,...
-    class
-      Dùng để nhóm các phần tử có cùng kiểu dáng hoặc chức năng.
-      Một class có thể được dùng cho nhiều phần tử.
-      Một phần tử cũng có thể có nhiều class. 
-
-      VD:
-      <section id="products">
-          <div class="product-card">Táo</div>
-          <div class="product-card">Cam</div>
-          <div class="product-card">Xoài</div>
-      </section>
-      =>Ở đây:
-          products là một khu vực duy nhất trên trang → dùng id.
-          Có nhiều thẻ sản phẩm giống nhau → dùng class product-card.
-
-          e cần nhớ kỹ :Nếu phần tử cần duy nhất → dùng id.
-                        Nếu nhiều phần tử cùng chia sẻ style hoặc hành vi → dùng class.
-
-          dù là một nút rất nhỏ nhưng nếu nó là duy nhất trên trang thì vẫn có thể dùng id:
-                <button id="submit-btn">Submit</button>
-          ngược lại một section rất lớn nhưng có nhiều section cùng kiểu thì vẫn nên dùng class:
-                <section class="card"></section>
-                <section class="card"></section>
-                <section class="card"></section>
-          ưu tiên dùng class cho CSS.
-          Chỉ dùng id khi thực sự cần một phần tử duy nhất hoặc làm anchor/link điều hướng.
-          và đây cũng là lý do trong các dự án thực tế, bạn sẽ thấy class xuất hiện nhiều hơn id.
--->
