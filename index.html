@@ -12,39 +12,51 @@
     <header id="header">
       <!--thẻ này sẽ bao gồm logo và các liên kết điều hướng-->
       <div class="logo">
-        <h1>Vietnamese Soup</h1>
-        <img src="" alt="logo WEB" />
+        <img src="./asset/images/favicon/logo-32x32.png" alt="logo-website" />
       </div>
       <ul class="nav">
         <!--do nav bar có dạng danh sách. dùng ul element-->
-        <li><a href="#home">Home</a></li>
+        <li><a href="#">Home</a></li>
         <li><a href="products.html">Shop</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
       <div class="cart">
-        <a href="cart.html">Cart</a>
+        <a href="#">Cart</a>
       </div>
       <div class="login">
-        <a href="login.html">Login</a>
+        <a href="#">Login</a>
       </div>
     </header>
     <section id="intro">
       <!--đặt id phần giới thiệu là intro-->
       <h2>Welcome to My Shop</h2>
       <div class="intro-banner">
-        <img src="" alt="" />
+        <img
+          src="./asset/images/banner/Vietnam-matguide.jpg"
+          alt="hero-banner"
+        />
       </div>
       <p>description</p>
     </section>
     <section id="widget-order">
       <div class="widget-orderbox">
         <!--thẻ này bao hết các thành phần con trong bảng-->
-        <div class="date"></div>
-        <div class="time"></div>
-        <div class="portions-foods"></div>
-        <div class="location"></div>
-        <div class="act-btn"></div>
+        <div class="date">
+          <div id="date">date</div>
+        </div>
+        <div class="time">
+          <div id="time">time</div>
+        </div>
+        <div class="portions-foods">
+          <div id="portions-foods">portions-foods</div>
+        </div>
+        <div class="location">
+          <div id="location">location</div>
+        </div>
+        <div class="act-btn">
+          <button id="order-btn">Order Now</button>
+        </div>
       </div>
     </section>
     <section id="wrapper-content">
@@ -57,7 +69,7 @@
             <!--đặt class cho product là product-->
             <figure>
               <a href="product-detail.html" target="_blank"
-                ><img src="./asset/imges/buncha.webp" alt="bún chả Hà Nội"
+                ><img src="./asset/imges/buncha.webp" alt="bun-cha"
               /></a>
               <!--ảnh bún chả được dẫn từ link-->
               <figcaption>
@@ -74,7 +86,7 @@
           <div class="product">
             <figure>
               <a href="product-detail.html" target="_blank"
-                ><img src="./asset/imges/Pho.png" alt="Phở bò"
+                ><img src="./asset/imges/Pho.png" alt="Pho-bo-Ha-Noi"
               /></a>
               <figcaption>
                 <h3>Phở Bò Hà Nội</h3>
@@ -87,7 +99,7 @@
           <div class="product">
             <figure>
               <a href="product-detail.html" target="_blank"
-                ><img src="./asset/imges/bc_botxat.jpg" alt="Bánh canh bột xắt"
+                ><img src="./asset/imges/bc_botxat.jpg" alt="Banh-canh-bot-xat"
               /></a>
               <figcaption>
                 <h3>Bánh canh bột xắt</h3>
@@ -121,11 +133,29 @@
       </section>
     </section>
 
-    <footer id="contact">
-      <h2>Liên hệ</h2>
-      <h3>Nhập tên: <input type="text" /></h3>
-      <h3>Nhập email: <input type="text" /></h3>
-      <button>Gửi</button>
+    <footer id="footer-wrapper">
+      <div class="col-help">
+        <h2>Trợ giúp</h2>
+        <p>
+          Đội ngũ hỗ trợ khách hàng luôn có mặt 24/7 theo số
+          <a href="#">+84 123 456 789</a><br />
+          Hoặc bạn có thể trò chuyện hay <a href="#">gửi email cho chúng tôi</a>
+        </p>
+        <a href="#"><p>F&Q</p></a>
+        <a href="#"><p>GIAO HÀNG, TRẢ HÀNG, HOÀN TIỀN</p></a>
+      </div>
+      <div class="col-services">
+        <h2>Dịch vụ</h2>
+        <a href="#"><p>Đặt bàn</p></a>
+        <a href="#"><p>Đặt món ăn</p></a>
+        <a href="#"><p>Đặt món ăn theo yêu cầu</p></a>
+      </div>
+      <div class="col-contact-us">
+        <h2>Liên hệ</h2>
+        <h3>Nhập tên: <input type="text" /></h3>
+        <h3>Nhập email: <input type="text" /></h3>
+        <button>Gửi</button>
+      </div>
     </footer>
   </body>
 </html>
