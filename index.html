@@ -6,17 +6,24 @@
     <meta name="description" content="Welcome to the best Vietnamese food!" />
     <!--thẻ meta này giúp seo đọc được nội dung tổng quan của website-->
     <link rel="stylesheet" href="./asset/CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
     <title>Welcome to the best Vietnamese food!</title>
   </head>
   <body>
     <header id="header">
       <!--thẻ này sẽ bao gồm logo và các liên kết điều hướng-->
       <div class="logo">
-        <img src="./asset/images/favicon/logo-32x32.png" alt="logo-website" />
+        <a href="index.html"
+          ><img src="./asset/images/favicon/logo-32x32.png" alt="logo-website"
+        /></a>
       </div>
       <ul class="nav">
         <!--do nav bar có dạng danh sách. dùng ul element-->
-        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Home</a></li>
         <li><a href="products.html">Shop</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -149,21 +156,21 @@
           <div class="event">
             <figure>
               <a href="about.html" target="_blank"
-                ><img src="#" alt="su-kien-1"
+                ><img src="./asset/images/restaurant/sk01.webp" alt="su-kien-1"
               /></a>
             </figure>
           </div>
           <div class="event">
             <figure>
               <a href="about.html" target="_blank"
-                ><img src="#" alt="su-kien-2"
+                ><img src="./asset/images/restaurant/sk02.jpg" alt="su-kien-2"
               /></a>
             </figure>
           </div>
           <div class="event">
             <figure>
               <a href="#" target="_blank"
-                ><img src="about.html" alt="su-kien-3"
+                ><img src="./asset/images/restaurant/sk03.jpg" alt="su-kien-3"
               /></a>
             </figure>
           </div>
@@ -175,26 +182,107 @@
           <h3>Các chi nhánh</h3>
           <a href="#"><p>Xem tất cả</p></a>
         </div>
-        <div class="events">
-          <div class="event">
-            <figure>
-              <a href="#" target="_blank"><img src="#" alt="chi-nhanh-1" /></a>
-            </figure>
-          </div>
-          <div class="event">
-            <figure>
-              <a href="#" target="_blank"><img src="#" alt="chi-nhanh-2" /></a>
-            </figure>
-          </div>
-          <div class="event">
-            <figure>
-              <a href="#" target="_blank"><img src="" alt="chi-nhanh-3" /></a>
-            </figure>
-          </div>
+        <div class="restaurants">
+          <figure class="restaurant">
+            <a href="#" target="_blank">
+              <img
+                src="./asset/images/restaurant/res1.avif"
+                alt="chi-nhanh-1"
+              />
+            </a>
+            <figcaption>
+              <h3>Hoàng Hoa Thám</h3>
+              <div class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <div class="review-count">
+                  <span>4.5/5</span>
+                  <span>(200 reviews)</span>
+                </div>
+              </div>
+              <div class="location-res">
+                <span>Địa chỉ: 123 Hoàng Hoa Thám, Ba Đình, Hà Nội</span>
+              </div>
+              <div class="books-today">
+                <a href="#"><span>Đặt bàn hôm nay: 50</span></a>
+              </div>
+              <div class="time-available">
+                <a href="#">2:00 PM</a>
+                <a href="#">2:50 PM</a>
+                <a href="#">4:00 PM</a>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="restaurant">
+            <a href="#" target="_blank"
+              ><img src="./asset/images/restaurant/res2.avif" alt="chi-nhanh-2"
+            /></a>
+            <figcaption>
+              <h3>Nguyễn Chí Thanh</h3>
+              <div class="star-rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </div>
+              <div class="review-count">
+                <span>4.7/5</span>
+                <span>(150 reviews)</span>
+              </div>
+
+              <div class="location-res">
+                <span>Địa chỉ: 456 Nguyễn Chí Thanh, Đống Đa, Hà Nội</span>
+              </div>
+              <div class="books-today">
+                <a href="#"><span>Đặt bàn hôm nay: 30</span></a>
+              </div>
+              <div class="time-available">
+                <a href="#">3:00 PM</a>
+                <a href="#">3:50 PM</a>
+                <a href="#">5:00 PM</a>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="restaurant">
+            <a href="#" target="_blank"
+              ><img src="./asset/images/restaurant/res3.avif" alt="chi-nhanh-3"
+            /></a>
+            <figcaption>
+              <h3>Nguyễn Trãi</h3>
+              <div class="star-rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </div>
+              <div class="review-count">
+                <span>4.6/5</span>
+                <span>(180 reviews)</span>
+              </div>
+              <div class="location-res">
+                <span>Địa chỉ: 789 Nguyễn Trãi, Thanh Xuân, Hà Nội</span>
+              </div>
+              <div class="books-today">
+                <a href="#"><span>Đặt bàn hôm nay: 40</span></a>
+              </div>
+              <div class="time-available">
+                <a href="#">4:00 PM</a>
+                <a href="#">4:50 PM</a>
+                <a href="#">6:00 PM</a>
+              </div>
+            </figcaption>
+          </figure>
         </div>
       </section>
 
-      <section id="find-table-bar">
+      <section id="find-table-chatbox">
         <!--chia thành 2 phần 1 phần cho title, 1 phần cho recommend-->
         <div class="titlebar">
           <h2>Tìm bàn phù hợp tại gần đây</h2>
