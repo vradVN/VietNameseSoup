@@ -32,37 +32,42 @@
       <!--đặt id phần giới thiệu là intro-->
       <h2>Welcome to My Shop</h2>
       <div class="intro-banner">
+        <!--chiếm toàn bộ màn hình - tốt hơn nếu là 1 short-->
         <img
           src="./asset/images/banner/Vietnam-matguide.jpg"
           alt="hero-banner"
         />
       </div>
-      <p>description</p>
     </section>
-    <section id="widget-order">
-      <div class="widget-orderbox">
-        <!--thẻ này bao hết các thành phần con trong bảng-->
-        <div class="date">
-          <div id="date">date</div>
-        </div>
-        <div class="time">
-          <div id="time">time</div>
-        </div>
-        <div class="portions-foods">
-          <div id="portions-foods">portions-foods</div>
-        </div>
-        <div class="location">
-          <div id="location">location</div>
-        </div>
-        <div class="act-btn">
-          <button id="order-btn">Order Now</button>
-        </div>
-      </div>
+    <section id="intro-culture-aboutus">
+      <h3>Trải nghiệm hương vị đặc sắc ẩm thực Việt</h3>
+      <strong>
+        Việt Nam luôn khiến du khách phải "thương nhớ" bởi vô vàn đặc sản mang
+        đậm hương vị và bản sắc văn hóa từng vùng miền. Cùng chúng tôi khám phá
+        những món ăn Việt Nam nổi tiếng đã chinh phục cả thế giới nhé!
+      </strong>
+      <p>
+        Ẩm thực Việt Nam là sự hòa quyện tinh tế của hương vị và màu sắc, phản
+        ánh đa dạng văn hóa từ Bắc vào Nam. Mỗi vùng miền đều kể câu chuyện
+        riêng qua từng món ăn đặc trưng, từ đường phố đến bàn tiệc. Nổi tiếng
+        với việc sử dụng rau xanh và thảo mộc tươi ngon, ẩm thực Việt không chỉ
+        tốt cho sức khỏe mà còn chinh phục thực khách quốc tế bởi sự kết hợp hài
+        hòa của nguyên liệu và gia vị. <br />
+        Vậy bạn đã sẵn sàng khám phá hết đặc sản ba miền nức tiếng cùng chúng
+        tôi chưa?
+      </p>
+      <a href="about.html"
+        ><button class="primary-btn">Tìm hiểu thêm</button></a
+      >
     </section>
+
     <section id="wrapper-content">
       <!--thẻ này sẽ bao hết không gian nội dung từ đoạn intro tới footer-->
-      <section class="restaurent-carousel">
-        <h3>Món đặt nhiều trong tuần</h3>
+      <section class="food-slider">
+        <div class="head-fd-slider">
+          <h3>Món đặt nhiều trong tuần</h3>
+          <a href="products.html"><p>Xem tất cả</p></a>
+        </div>
         <div class="products">
           <!--đặt id cho danh sách món ăn là products-->
           <div class="product">
@@ -111,6 +116,82 @@
           </div>
         </div>
       </section>
+
+      <section id="widget-order">
+        <div class="widget-orderbox">
+          thẻ này bao hết các thành phần con trong bảng
+          <div class="date">
+            <div id="date">date</div>
+          </div>
+          <div class="time">
+            <div id="time">time</div>
+          </div>
+          <div class="portions-foods">
+            <div id="portions-foods">portions-foods</div>
+          </div>
+          <div class="location">
+            <div id="location">location</div>
+          </div>
+          <div class="act-btn">
+            <button id="order-btn">Order Now</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="event-restaurant-slider">
+        <div class="head-res-slider">
+          <h3>Các hoạt động</h3>
+          <a href="about.html"><p>Xem tất cả</p></a>
+        </div>
+        <div class="events">
+          <div class="event">
+            <figure>
+              <a href="about.html" target="_blank"
+                ><img src="#" alt="su-kien-1"
+              /></a>
+            </figure>
+          </div>
+          <div class="event">
+            <figure>
+              <a href="about.html" target="_blank"
+                ><img src="#" alt="su-kien-2"
+              /></a>
+            </figure>
+          </div>
+          <div class="event">
+            <figure>
+              <a href="#" target="_blank"
+                ><img src="about.html" alt="su-kien-3"
+              /></a>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="restaurant-slider">
+        <div class="head-res-slider">
+          <h3>Các chi nhánh</h3>
+          <a href="#"><p>Xem tất cả</p></a>
+        </div>
+        <div class="events">
+          <div class="event">
+            <figure>
+              <a href="#" target="_blank"><img src="#" alt="chi-nhanh-1" /></a>
+            </figure>
+          </div>
+          <div class="event">
+            <figure>
+              <a href="#" target="_blank"><img src="#" alt="chi-nhanh-2" /></a>
+            </figure>
+          </div>
+          <div class="event">
+            <figure>
+              <a href="#" target="_blank"><img src="" alt="chi-nhanh-3" /></a>
+            </figure>
+          </div>
+        </div>
+      </section>
+      
       <section id="find-table-bar">
         <!--chia thành 2 phần 1 phần cho title, 1 phần cho recommend-->
         <div class="titlebar">
@@ -134,6 +215,17 @@
     </section>
 
     <footer id="footer-wrapper">
+      <div class="col-coppyright-products">
+        <h2>
+          CÔNG TY TNHH NHÀ HÀNG MÓN ĂN VIỆT - Số ĐKKD 010082565 do sở KHĐT Thành
+          phố HÀ NỘI cấp ngày 04/01/2021 Địa chỉ: 78 Nguyễn Chí Thanh, Phường
+          Láng Thượng, Quận Đống Đa, Thành Phố Hà Nội, Việt Nam
+        </h2>
+
+        <p>
+          &copy; 2021 CÔNG TY TNHH NHÀ HÀNG MÓN ĂN VIỆT. All rights reserved.
+        </p>
+      </div>
       <div class="col-help">
         <h2>Trợ giúp</h2>
         <p>
